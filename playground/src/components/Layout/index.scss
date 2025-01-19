@@ -1,0 +1,30 @@
+.app-layout {
+  height: 100%;
+  background-color: transparent;
+  .header {
+    border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+    background-color: transparent;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .ant-btn {
+        padding-right: 0;
+        font-size: 20px;
+        color: #000;
+      }
+    }
+  }
+  .content {
+  }
+  .footer {
+    border-top: 1px solid rgba(5, 5, 5, 0.06);
+    background-color: transparent;
+    a.ant-btn {
+      padding: 0 2px 0 4px;
+    }
+  }
+}
