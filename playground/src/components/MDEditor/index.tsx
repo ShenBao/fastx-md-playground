@@ -10,7 +10,11 @@ import math from "@bytemd/plugin-math";
 import mediumZoom from "@bytemd/plugin-medium-zoom";
 import mermaid from "@bytemd/plugin-mermaid";
 
+import align from '@fastx/bytemd-plugin-align'
+
 import zhHans from "bytemd/locales/zh_Hans.json";
+import zhHansAlign from '@fastx/bytemd-plugin-align/locales/zh_Hans.json'
+
 
 import { exportMarkdown, stripPrefixes } from "../../utils";
 
@@ -64,6 +68,9 @@ const plugins = [
   mediumZoom(),
   mermaid({
     locale: mermaidLocales[localeKey],
+  }),
+  align({
+    locale: zhHansAlign
   }),
 ];
 
