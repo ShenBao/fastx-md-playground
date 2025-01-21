@@ -57,6 +57,16 @@ importers:
         specifier: ^1.22.0
         version: 1.22.0
 
+  packages/bytemd-plugin-markdown-theme:
+    dependencies:
+      bytemd:
+        specifier: ^1.22.0
+        version: 1.22.0
+    devDependencies:
+      '@bytemd/plugin-frontmatter':
+        specifier: ^1.22.0
+        version: 1.22.0(bytemd@1.22.0)
+
   playground:
     dependencies:
       '@ant-design/icons':
@@ -95,6 +105,9 @@ importers:
       '@fastx/bytemd-plugin-align':
         specifier: workspace:^
         version: link:../packages/bytemd-plugin-align
+      '@fastx/bytemd-plugin-markdown-theme':
+        specifier: workspace:^
+        version: link:../packages/bytemd-plugin-markdown-theme
       antd:
         specifier: ^5.24.3
         version: 5.24.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)

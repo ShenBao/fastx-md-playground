@@ -79,7 +79,7 @@ import { packages, packagesDir } from './const'
           }
         },
         resolve: { alias },
-        plugins: [viteDts()]
+        plugins: [viteDts({ rollupTypes: true })]
       })
     }
   }

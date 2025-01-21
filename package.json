@@ -1,6 +1,7 @@
 {
   "name": "fastx-md-playground",
   "scripts": {
+    "clean": "rm -rf node_modules packages/*/node_modules packages/*/dist playground/node_modules",
     "dev": "cd ./playground && vite",
     "build": "tsx ./scripts/build.ts"
   },

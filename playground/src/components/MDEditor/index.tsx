@@ -10,11 +10,13 @@ import math from "@bytemd/plugin-math";
 import mediumZoom from "@bytemd/plugin-medium-zoom";
 import mermaid from "@bytemd/plugin-mermaid";
 
-import align from '@fastx/bytemd-plugin-align'
+import align from "@fastx/bytemd-plugin-align";
+import markdownTheme from "@fastx/bytemd-plugin-markdown-theme";
+import themes from "@fastx/bytemd-plugin-markdown-theme/dist/themes.json";
 
 import zhHans from "bytemd/locales/zh_Hans.json";
-import zhHansAlign from '@fastx/bytemd-plugin-align/locales/zh_Hans.json'
-
+import zhHansAlign from "@fastx/bytemd-plugin-align/locales/zh_Hans.json";
+import zhHansMarkdownTheme from "@fastx/bytemd-plugin-markdown-theme/locales/zh_Hans.json";
 
 import { exportMarkdown, stripPrefixes } from "../../utils";
 
@@ -70,7 +72,12 @@ const plugins = [
     locale: mermaidLocales[localeKey],
   }),
   align({
-    locale: zhHansAlign
+    locale: zhHansAlign,
+  }),
+  markdownTheme({
+    locale: zhHansMarkdownTheme,
+    themes,
+    defaultTheme: "juejin",
   }),
 ];
 
