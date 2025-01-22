@@ -13,10 +13,13 @@ import mermaid from "@bytemd/plugin-mermaid";
 import align from "@fastx/bytemd-plugin-align";
 import markdownTheme from "@fastx/bytemd-plugin-markdown-theme";
 import themes from "@fastx/bytemd-plugin-markdown-theme/dist/themes.json";
+import highlightTheme from '@fastx/bytemd-plugin-highlight-theme'
+import highlights from '@fastx/bytemd-plugin-highlight-theme/dist/highlights.json'
 
 import zhHans from "bytemd/locales/zh_Hans.json";
 import zhHansAlign from "@fastx/bytemd-plugin-align/locales/zh_Hans.json";
 import zhHansMarkdownTheme from "@fastx/bytemd-plugin-markdown-theme/locales/zh_Hans.json";
+import zhHansHighlightTheme from '@fastx/bytemd-plugin-highlight-theme/locales/zh_Hans.json'
 
 import { exportMarkdown, stripPrefixes } from "../../utils";
 
@@ -73,6 +76,11 @@ const plugins = [
   }),
   align({
     locale: zhHansAlign,
+  }),
+  highlightTheme({
+    locale: zhHansHighlightTheme,
+    highlights,
+    defaultHighlight: 'atom-one-dark'
   }),
   markdownTheme({
     locale: zhHansMarkdownTheme,

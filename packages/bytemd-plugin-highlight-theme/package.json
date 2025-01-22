@@ -1,14 +1,14 @@
 {
-  "name": "@fastx/bytemd-plugin-markdown-theme",
+  "name": "@fastx/bytemd-plugin-highlight-theme",
   "private": false,
   "version": "1.0.0",
-  "description": "ByteMD plugin to support custom markdown theme",
+  "description": "ByteMD plugin to support custom code highlight theme",
   "license": "MIT",
   "author": "ShenBao",
   "repository": {
     "type": "git",
     "url": "https://github.com/ShenBao/fastx-md-playground.git",
-    "directory": "packages/bytemd-plugin-markdown-theme"
+    "directory": "packages/bytemd-plugin-highlight-theme"
   },
   "types": "./dist/index.d.ts",
   "module": "./dist/index.mjs",
@@ -31,10 +31,11 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "dependencies": {
+    "@bytemd/plugin-frontmatter": "^1.22.0",
+    "@bytemd/plugin-highlight": "^1.22.0"
+  },
   "peerDependencies": {
     "bytemd": "^1.22.0"
-  },
-  "devDependencies": {
-    "@bytemd/plugin-frontmatter": "^1.22.0"
   }
 }
