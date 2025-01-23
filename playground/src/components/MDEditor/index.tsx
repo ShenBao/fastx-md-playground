@@ -13,13 +13,15 @@ import mermaid from "@bytemd/plugin-mermaid";
 import align from "@fastx/bytemd-plugin-align";
 import markdownTheme from "@fastx/bytemd-plugin-markdown-theme";
 import themes from "@fastx/bytemd-plugin-markdown-theme/dist/themes.json";
-import highlightTheme from '@fastx/bytemd-plugin-highlight-theme'
-import highlights from '@fastx/bytemd-plugin-highlight-theme/dist/highlights.json'
+import highlightTheme from "@fastx/bytemd-plugin-highlight-theme";
+import highlights from "@fastx/bytemd-plugin-highlight-theme/dist/highlights.json";
+import imageZoom from "@fastx/bytemd-plugin-image-zoom";
 
 import zhHans from "bytemd/locales/zh_Hans.json";
 import zhHansAlign from "@fastx/bytemd-plugin-align/locales/zh_Hans.json";
 import zhHansMarkdownTheme from "@fastx/bytemd-plugin-markdown-theme/locales/zh_Hans.json";
-import zhHansHighlightTheme from '@fastx/bytemd-plugin-highlight-theme/locales/zh_Hans.json'
+import zhHansHighlightTheme from "@fastx/bytemd-plugin-highlight-theme/locales/zh_Hans.json";
+import zhHansImageZoom from "@fastx/bytemd-plugin-image-zoom/locales/zh_Hans.json";
 
 import { exportMarkdown, stripPrefixes } from "../../utils";
 
@@ -27,6 +29,8 @@ import "github-markdown-css/github-markdown.css";
 import "highlight.js/styles/vs.css";
 import "./index.scss";
 import "bytemd/dist/index.css";
+
+import mdText from "./md.md?raw";
 
 const locales = stripPrefixes(
   import.meta.glob("/node_modules/bytemd/locales/*.json", { eager: true })
@@ -80,12 +84,15 @@ const plugins = [
   highlightTheme({
     locale: zhHansHighlightTheme,
     highlights,
-    defaultHighlight: 'atom-one-dark'
+    defaultHighlight: "atom-one-dark",
   }),
   markdownTheme({
     locale: zhHansMarkdownTheme,
     themes,
     defaultTheme: "juejin",
+  }),
+  imageZoom({
+    locale: zhHansImageZoom,
   }),
 ];
 
@@ -119,7 +126,7 @@ const editorConfig = {
 };
 
 const MDEditor = () => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(mdText || "");
 
   return (
     <div className="editor-wrapper">
@@ -128,6 +135,8 @@ const MDEditor = () => {
         plugins={plugins}
         locale={zhHans}
         onChange={(v: string) => {
+          console.log("============== newValue:");
+          console.log(v);
           setValue(v);
         }}
         {...editorConfig}

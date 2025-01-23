@@ -69,6 +69,12 @@ importers:
         specifier: ^1.22.0
         version: 1.22.0
 
+  packages/bytemd-plugin-image-zoom:
+    dependencies:
+      bytemd:
+        specifier: ^1.20.2
+        version: 1.22.0
+
   packages/bytemd-plugin-markdown-theme:
     dependencies:
       bytemd:
@@ -120,6 +126,9 @@ importers:
       '@fastx/bytemd-plugin-highlight-theme':
         specifier: workspace:^
         version: link:../packages/bytemd-plugin-highlight-theme
+      '@fastx/bytemd-plugin-image-zoom':
+        specifier: workspace:^
+        version: link:../packages/bytemd-plugin-image-zoom
       '@fastx/bytemd-plugin-markdown-theme':
         specifier: workspace:^
         version: link:../packages/bytemd-plugin-markdown-theme
