@@ -23,6 +23,10 @@ import zhHansMarkdownTheme from "@fastx/bytemd-plugin-markdown-theme/locales/zh_
 import zhHansHighlightTheme from "@fastx/bytemd-plugin-highlight-theme/locales/zh_Hans.json";
 import zhHansImageZoom from "@fastx/bytemd-plugin-image-zoom/locales/zh_Hans.json";
 
+import copyCode from "@fastx/bytemd-plugin-copy-code";
+import zhHansCopyCode from "@fastx/bytemd-plugin-copy-code/locales/zh_Hans.json";
+import "@fastx/bytemd-plugin-copy-code/dist/index.css";
+
 import { exportMarkdown, stripPrefixes } from "../../utils";
 
 import "github-markdown-css/github-markdown.css";
@@ -93,6 +97,20 @@ const plugins = [
   }),
   imageZoom({
     locale: zhHansImageZoom,
+  }),
+  copyCode({
+    locale: zhHansCopyCode,
+    copySuccess: (text) => {
+      console.log(text);
+      console.log("复制成功");
+    },
+    copyError: (err) => {
+      console.error("复制失败", err);
+    },
+    copyRight: `
+      
+版权所有 © ${2025} ShenBao/fastx-md-playground. 保留所有权利。
+    `,
   }),
 ];
 

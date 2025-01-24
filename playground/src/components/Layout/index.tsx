@@ -11,7 +11,7 @@ const LayoutComponent = ({ children }: { children: ReactNode }) => {
     <Layout className="app-layout">
       <Header className="header">
         <div className="logo">
-          <h1>MD Playground</h1>
+          <h1>FastX Markdown Playground</h1>
         </div>
         <div className="actions">
           <Button

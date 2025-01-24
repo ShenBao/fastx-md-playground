@@ -59,6 +59,7 @@ import { packages, packagesDir } from './const'
         // do not resolve `browser` field to make CJS bundle work at SSR
         // https://github.com/vitejs/vite/issues/4405
         // for bytemd and plugin-gfm
+        // @ts-ignore
         alias[pkgName] = sync(pkgName)
       }
 

@@ -3,14 +3,14 @@ theme: vuepress
 highlight: atom-one-dark
 ---
 
-> 强大的Markdown编辑器
+> 强大的 Markdown 编辑器
 
-- 由ByteMD强力驱动，功能丰富、性能强劲
-- 支持GFM扩展语法、脚注、Gemoji、KaTeX数学公式、Mermaid图表
-- 支持通过Frontmatter设置多种主题、代码高亮样式
+- 由 ByteMD 强力驱动，功能丰富、性能强劲
+- 支持 GFM 扩展语法、脚注、Gemoji、KaTeX 数学公式、Mermaid 图表
+- 支持通过 Frontmatter 设置多种主题、代码高亮样式
 - 支持实时同步预览
 
-## Markdown基础语法
+## Markdown 基础语法
 
 I just love **bold text**. Italicized text is the _cat's meow_. At the command prompt, type `nano`.
 
@@ -21,8 +21,8 @@ I just love **bold text**. Italicized text is the _cat's meow_. At the command p
 > Dorothy followed her through many of the beautiful rooms in her castle.
 
 ```ts
-const message = 'Hello, SuperMarkdown!'
-console.log(message)
+const message = "Hello, Fastx MD Playground!";
+console.log(message);
 ```
 
 ## GFM 扩展语法
@@ -79,7 +79,7 @@ graph TD;
   C-->D;
 ```
 
-## 相关链接
+## Links
 
-- [FastX MD Playground](https://github.com/ShenBao/fastx-md-playground)
-- [Github](https://github.com/ShenBao)
+- [FastX Markdown Playground](https://github.com/ShenBao/fastx-md-playground)
+- [ShenBao](https://github.com/ShenBao)

@@ -1,0 +1,55 @@
+.code-block-extension-header {
+  display: flex;
+  user-select: none;
+  height: 28px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 5px -6px #888888;
+  margin-bottom: 3px;
+}
+.code-block-extension-headerRight {
+  margin-right: 10px;
+}
+
+.code-block-extension-headerLeft,
+.code-block-extension-headerRight {
+  display: flex;
+  align-items: center;
+}
+.code-block-extension-lang {
+  margin-left: 20px;
+  font-size: 12px;
+  filter: invert(0.5);
+  opacity: 0.6;
+}
+.code-block-extension-meta {
+  margin-left: 5px;
+  font-size: 14px;
+  filter: invert(0.5);
+  opacity: 0.6;
+}
+.code-block-extension-headerLeft > .code-block-extension-foldBtn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  filter: invert(0.8);
+}
+.code-block-extension-headerLeft
+  > .code-block-extension-foldBtn.code-block-extension-fold {
+  transform: rotate(-90deg);
+}
+code.code-block-extension-fold {
+  display: none !important;
+}
+.code-block-extension-headerRight > .code-block-extension-copyBtn {
+  margin-left: 10px;
+  opacity: 0.6;
+  font-size: 12px;
+  cursor: pointer;
+}
+.code-block-extension-headerRight > .code-block-extension-copyBtn:hover {
+  opacity: 0.8;
+}
