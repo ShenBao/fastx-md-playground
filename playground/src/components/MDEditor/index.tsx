@@ -71,19 +71,24 @@ const plugins = [
     locale: gfmLocales[localeKey],
   }),
 
-  highlight({
-    // theme: "github-markdown-css/github-markdown.css", // 或其他主题
+  mediumZoom(),
+
+  align({
+    locale: zhHansAlign,
   }),
+  imageZoom({
+    locale: zhHansImageZoom,
+  }),
+
   math({
     locale: mathLocales[localeKey],
     katexOptions: { output: "html" }, // https://github.com/KaTeX/KaTeX/issues/2796
   }),
-  mediumZoom(),
   mermaid({
     locale: mermaidLocales[localeKey],
   }),
-  align({
-    locale: zhHansAlign,
+  highlight({
+    // theme: "github-markdown-css/github-markdown.css", // 或其他主题
   }),
   highlightTheme({
     locale: zhHansHighlightTheme,
@@ -95,9 +100,7 @@ const plugins = [
     themes,
     defaultTheme: "juejin",
   }),
-  imageZoom({
-    locale: zhHansImageZoom,
-  }),
+
   copyCode({
     locale: zhHansCopyCode,
     copySuccess: (text) => {
