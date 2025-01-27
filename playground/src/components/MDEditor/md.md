@@ -10,20 +10,6 @@ highlight: atom-one-dark
 - 支持通过 Frontmatter 设置多种主题、代码高亮样式
 - 支持实时同步预览
 
-## GitHub
-
-[GitHub 地址：https://github.com/ShenBao/fastx-md-playground](https://github.com/ShenBao/fastx-md-playground)
-
-## Bytemd Plugins
-
-| Plugin Name | Desc | Status |
-| --- | --- | --- |
-| [@fastx/bytemd-plugin-align](https://github.com/ShenBao/fastx-md-playground/tree/main/packages/bytemd-plugin-align) | Align Type Plugin | [![npm](https://img.shields.io/npm/v/@fastx/bytemd-plugin-align.svg)](https://www.npmjs.com/package/@fastx/bytemd-plugin-align) |
-| [@fastx/bytemd-plugin-image-zoom](https://github.com/ShenBao/fastx-md-playground/tree/main/packages/bytemd-plugin-image-zoom) | Image Zoom Plugin | [![npm](https://img.shields.io/npm/v/@fastx/bytemd-plugin-image-zoom.svg)](https://www.npmjs.com/package/@fastx/bytemd-plugin-image-zoom) |
-| [@fastx/bytemd-plugin-highlight-theme](https://github.com/ShenBao/fastx-md-playground/tree/main/packages/bytemd-plugin-highlight-theme) | Code Highlight Theme Plugin | [![npm](https://img.shields.io/npm/v/@fastx/bytemd-plugin-highlight-theme.svg)](https://www.npmjs.com/package/@fastx/bytemd-plugin-highlight-theme) |
-| [@fastx/bytemd-plugin-markdown-theme](https://github.com/ShenBao/fastx-md-playground/tree/main/packages/bytemd-plugin-markdown-theme) | Markdown Theme Plugin | [![npm](https://img.shields.io/npm/v/@fastx/bytemd-plugin-markdown-theme.svg)](https://www.npmjs.com/package/@fastx/bytemd-plugin-markdown-theme) |
-| [@fastx/bytemd-plugin-copy-code](https://github.com/ShenBao/fastx-md-playground/tree/main/packages/bytemd-plugin-copy-code) | Copy Code Plugin | [![npm](https://img.shields.io/npm/v/@fastx/bytemd-plugin-copy-code.svg)](https://www.npmjs.com/package/@fastx/bytemd-plugin-copy-code) |
-
 ## Markdown 基础语法
 
 I just love **bold text**. Italicized text is the _cat's meow_. At the command prompt, type `nano`.
@@ -34,10 +20,35 @@ I just love **bold text**. Italicized text is the _cat's meow_. At the command p
 
 > Dorothy followed her through many of the beautiful rooms in her castle.
 
+### 列表示例
+
+1. 有序列表项 1
+2. 有序列表项 2
+   - 无序子列表项
+   - 另一个子列表项
+3. 有序列表项 3
+
+### 代码示例
+
+```javascript
+function hello() {
+  console.log('Hello, Markdown!');
+}
+```
+
 ```ts
 const message = "Hello, Fastx MD Playground!";
 console.log(message);
 ```
+
+### 表格示例
+
+| 功能 | 支持情况 |
+|------|----------|
+| 标题 | ✅ |
+| 列表 | ✅ |
+| 代码块 | ✅ |
+| 数学公式 | ✅ |
 
 ## GFM 扩展语法
 

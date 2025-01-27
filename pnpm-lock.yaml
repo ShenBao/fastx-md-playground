@@ -169,6 +169,9 @@ importers:
       highlight.js:
         specifier: ^11.11.1
         version: 11.11.1
+      katex:
+        specifier: ^0.16.4
+        version: 0.16.21
       react:
         specifier: ^19.0.0
         version: 19.0.0
