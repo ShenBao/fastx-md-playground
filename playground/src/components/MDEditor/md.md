@@ -6,9 +6,9 @@ highlight: atom-one-dark
 > 强大的 Markdown 编辑器
 
 - 由 ByteMD 强力驱动，功能丰富、性能强劲
-- 支持 GFM 扩展语法、脚注、Gemoji、KaTeX 数学公式、Mermaid 图表
-- 支持通过 Frontmatter 设置多种主题、代码高亮样式
-- 支持实时同步预览
+- 支持 GFM 扩展语法、脚注、Gemoji、KaTeX 数学公式、Mermaid 图表等
+- 支持自定义扩展：文本对齐方式、图片缩放、自定义Markdown主题样式、自定义代码高亮样式、代码复制
+- 支持实时同步预览、支持自动分析目录树
 
 ## Markdown 基础语法
 
@@ -37,7 +37,7 @@ function hello() {
 ```
 
 ```ts
-const message = "Hello, Fastx MD Playground!";
+const message = "Hello, FastX MD Playground!";
 console.log(message);
 ```
 

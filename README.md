@@ -2,6 +2,12 @@
 
 FastX MD Playground
 
+> 强大的 Markdown 在线编辑器
+
+- 由 ByteMD 强力驱动，功能丰富、性能强劲
+- 支持 GFM 扩展语法、脚注、Gemoji、KaTeX 数学公式、Mermaid 图表等
+- 支持自定义扩展：文本对齐方式、图片缩放、自定义Markdown主题样式、自定义代码高亮样式、代码复制
+- 支持实时同步预览、支持自动分析目录树
 
 ## Bytemd Plugins
 
@@ -18,3 +24,7 @@ FastX MD Playground
 - [GitHub Home](https://github.com/ShenBao)
 - [Blog Home](https://shenbao.github.io)
 - [About Me](https://shenbao.github.io/about/)
+
+## License
+
+MIT
