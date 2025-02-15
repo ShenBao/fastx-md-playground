@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Editor, Viewer } from "@bytemd/react";
+import { Editor } from "@bytemd/react";
 
 // 支持中断的插件（允许换行）
 import breaks from "@bytemd/plugin-breaks";
@@ -51,7 +51,7 @@ import copyCode from "@fastx/bytemd-plugin-copy-code";
 import zhHansCopyCode from "@fastx/bytemd-plugin-copy-code/locales/zh_Hans.json";
 import "@fastx/bytemd-plugin-copy-code/dist/index.css";
 
-import { exportMarkdown, stripPrefixes } from "../../utils";
+import { stripPrefixes } from "../../utils";
 
 import "github-markdown-css/github-markdown.css";
 import "highlight.js/styles/vs.css";
@@ -60,9 +60,9 @@ import "bytemd/dist/index.css";
 
 import mdText from "./md.md?raw";
 
-const locales = stripPrefixes(
-  import.meta.glob("/node_modules/bytemd/locales/*.json", { eager: true })
-);
+// const locales = stripPrefixes(
+//   import.meta.glob("/node_modules/bytemd/locales/*.json", { eager: true })
+// );
 const gfmLocales = stripPrefixes(
   import.meta.glob("/node_modules/@bytemd/plugin-gfm/locales/*.json", {
     eager: true,

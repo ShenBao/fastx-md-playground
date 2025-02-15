@@ -1,6 +1,6 @@
 # fastx-md-playground
 
-FastX MD Playground
+[FastX MD Playground](https://shenbao.github.io/fastx-md-playground/)
 
 > 强大的 Markdown 在线编辑器
 
